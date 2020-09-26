@@ -7,5 +7,4 @@ USER container
 ENV USER=container HOME=/home/container
 WORKDIR /home/container
 ADD . /
-RUN npm ci
 CMD ["/bin/ash", "/entrypoint.sh"]
