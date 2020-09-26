@@ -1,5 +1,5 @@
 FROM node:current-alpine
-RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite python2 python3 make cmake
+RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite python2 python3 make cmake gcc
 RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools
 RUN adduser -D -h /home/container container
